@@ -1,0 +1,55 @@
+:root {
+  /* === Colores principales (FlutterFlow LightModeTheme) === */
+  --primary:             #0074FF;
+  --primary-hover:       #005FD6;
+  --secondary:           #FFCF13;
+  --tertiary:            #EE8B60;
+  --alternate:           #E0E3E7;
+
+  --text-primary:        #14181B;
+  --text-secondary:      #57636C;
+
+  --bg-primary:          #F1F4F8;
+  --bg-secondary:        #FFFFFF;
+
+  --accent1:             rgba(75,57,239,0.30);
+  --accent2:             rgba(57,210,192,0.30);
+  --accent3:             rgba(238,139,96,0.30);
+  --accent4:             rgba(255,255,255,0.80);
+
+  --success:             #249689;
+  --warning:             #F9CF58;
+  --error:               #FF5963;
+  --info:                #FFFFFF;
+
+  /* === Colores custom === */
+  --nav-active:          #00A0FF;
+  --cabecera:            #8BC4FF;
+  --cuerpo:              #E0E3E7;
+  --maximum-blue-green:  #59C3C3;
+  --plump-purple:        #52489C;
+  --platinum:            #EBEBEB;
+  --ash-gray:            #CAD2C5;
+  --dark-sea-green:      #84A98C;
+  --line-color:          #E0E3E7;
+  --gray-icon:           #95A1AC;
+  --gray-200:            #DBE2E7;
+  --gray-600:            #262D34;
+
+  /* === Tipografía === */
+  --font-heading:        'Outfit', sans-serif;
+  --font-body:           'Readex Pro', sans-serif;
+
+  /* === Layout === */
+  --sidebar-width:       270px;
+  --sidebar-collapsed:   72px;
+  --header-height:       64px;
+  --border-radius:       12px;
+  --border-radius-sm:    8px;
+  --shadow-sm:           0 1px 4px rgba(0,0,0,0.08);
+  --shadow-md:           0 4px 12px rgba(0,0,0,0.12);
+  --shadow-lg:           0 8px 24px rgba(0,0,0,0.16);
+
+  /* === Transiciones === */
+  --transition:          all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}

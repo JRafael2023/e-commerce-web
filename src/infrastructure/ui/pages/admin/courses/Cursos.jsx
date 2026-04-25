@@ -5,10 +5,10 @@ import '../../../components/common/PageHeader.css'
 import './Cursos.css'
 
 const mockCursos = [
-  { id: 1, titulo: 'Atención al Cliente',       pasos: 5, duracion: '2h 30m', nivel: 'Básico',     imagen: '📦' },
-  { id: 2, titulo: 'Manejo de Inventario',      pasos: 8, duracion: '4h 00m', nivel: 'Intermedio', imagen: '🏭' },
-  { id: 3, titulo: 'Técnicas de Ventas',        pasos: 6, duracion: '3h 15m', nivel: 'Básico',     imagen: '💼' },
-  { id: 4, titulo: 'Uso del Sistema TaListo',   pasos: 10,duracion: '5h 00m', nivel: 'Básico',     imagen: '💻' },
+  { id: 1, titulo: 'Atención al Cliente',        pasos: 5,  duracion: '2h 30m', nivel: 'Básico',     icon: 'fa-headset',       color: '#0074FF' },
+  { id: 2, titulo: 'Manejo de Inventario',       pasos: 8,  duracion: '4h 00m', nivel: 'Intermedio', icon: 'fa-warehouse',     color: '#249689' },
+  { id: 3, titulo: 'Técnicas de Ventas',         pasos: 6,  duracion: '3h 15m', nivel: 'Básico',     icon: 'fa-chart-line',    color: '#EE8B60' },
+  { id: 4, titulo: 'Uso del Sistema E-Commerce', pasos: 10, duracion: '5h 00m', nivel: 'Básico',     icon: 'fa-display',       color: '#52489C' },
 ]
 
 const nivelColor = { 'Básico': 'active', 'Intermedio': 'pending', 'Avanzado': 'error' }
@@ -28,7 +28,9 @@ export default function Cursos() {
       <div className="cursos-grid">
         {mockCursos.map(c => (
           <div key={c.id} className="curso-card" onClick={() => navigate(`/admin/cursos/${c.id}`)}>
-            <div className="curso-card__img">{c.imagen}</div>
+            <div className="curso-card__img" style={{ background: `linear-gradient(135deg, ${c.color}22, ${c.color}44)` }}>
+              <i className={`fa-solid ${c.icon}`} style={{ fontSize: 48, color: c.color }} />
+            </div>
             <div className="curso-card__body">
               <h3 className="curso-card__title">{c.titulo}</h3>
               <div className="curso-card__meta">

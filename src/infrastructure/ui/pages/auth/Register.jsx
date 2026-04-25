@@ -33,7 +33,7 @@ export default function Register() {
     <div className="auth-page">
       <div className="auth-card auth-card--wide">
         <div className="auth-card__logo">
-          <span className="auth-logo-text">TaListo</span>
+          <span className="auth-logo-text">E-Commerce</span>
           <span className="auth-logo-accent">Admin</span>
         </div>
         <h1 className="auth-card__title">Crear Cuenta</h1>

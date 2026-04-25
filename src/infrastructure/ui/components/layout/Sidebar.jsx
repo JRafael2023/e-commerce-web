@@ -39,7 +39,7 @@ export default function Sidebar({ collapsed, onToggle }) {
         </button>
         {!collapsed && (
           <div className="sidebar__logo" onClick={() => navigate('/admin')}>
-            <span className="sidebar__logo-text">TaListo</span>
+            <span className="sidebar__logo-text">E-Commerce</span>
             <span className="sidebar__logo-accent">Admin</span>
           </div>
         )}

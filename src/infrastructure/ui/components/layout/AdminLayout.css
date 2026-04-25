@@ -15,7 +15,7 @@
 
 /* Topbar */
 .admin-layout__topbar {
-  height: var(--header-height);
+  height: 60px;
   background: var(--bg-secondary);
   border-bottom: 1px solid var(--line-color);
   display: flex;
@@ -23,87 +23,100 @@
   justify-content: space-between;
   padding: 0 24px;
   flex-shrink: 0;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
 .topbar__title {
   font-family: var(--font-heading);
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
   color: var(--text-primary);
+  letter-spacing: -0.2px;
 }
 
 .topbar__right {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
 }
 
 .topbar__icon-btn {
   background: none;
   border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
+  font-size: 16px;
   color: var(--text-secondary);
   position: relative;
   transition: var(--transition);
 }
-.topbar__icon-btn:hover { background: var(--bg-primary); color: var(--primary); }
+.topbar__icon-btn:hover {
+  background: var(--bg-primary);
+  color: var(--primary);
+}
 .topbar__icon-btn .badge {
   position: absolute;
-  top: 4px;
-  right: 4px;
-  min-width: 16px;
-  height: 16px;
-  font-size: 10px;
-  padding: 0 4px;
+  top: 5px;
+  right: 5px;
+  min-width: 15px;
+  height: 15px;
+  font-size: 9px;
+  padding: 0 3px;
 }
 
 .topbar__user {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 9px;
   cursor: pointer;
-  padding: 6px 10px;
-  border-radius: var(--border-radius);
+  padding: 5px 10px 5px 6px;
+  border-radius: 10px;
   transition: var(--transition);
+  border: 1px solid transparent;
+  margin-left: 4px;
 }
-.topbar__user:hover { background: var(--bg-primary); }
+.topbar__user:hover {
+  background: var(--bg-primary);
+  border-color: var(--line-color);
+}
 
 .topbar__avatar {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: var(--primary);
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  background: linear-gradient(135deg, var(--primary), #0056cc);
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   font-family: var(--font-heading);
+  box-shadow: 0 2px 6px rgba(0,116,255,0.3);
 }
 
 .topbar__user-name {
-  font-weight: 500;
-  font-size: 14px;
+  font-weight: 600;
+  font-size: 13.5px;
   color: var(--text-primary);
   display: block;
+  line-height: 1.3;
+  font-family: var(--font-heading);
 }
 .topbar__user-role {
-  font-size: 12px;
+  font-size: 11px;
   color: var(--text-secondary);
   display: block;
+  line-height: 1.3;
 }
 
 /* Content */
 .admin-layout__content {
   flex: 1;
   overflow-y: auto;
-  padding: 24px;
+  padding: 28px;
 }

@@ -14,7 +14,7 @@ export default function AdminLayout() {
       <div className="admin-layout__main">
         <header className="admin-layout__topbar">
           <div className="topbar__left">
-            <h2 className="topbar__title">Panel de Administración</h2>
+            <h2 className="topbar__title">E-Commerce Admin</h2>
           </div>
           <div className="topbar__right">
             <button className="topbar__icon-btn" onClick={() => navigate('/admin/notificaciones')} title="Notificaciones">

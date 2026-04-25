@@ -1,5 +1,5 @@
-import PageHeader from '../../components/common/PageHeader.jsx'
-import '../../components/common/PageHeader.css'
+import PageHeader from '../../../components/common/PageHeader.jsx'
+import '../../../components/common/PageHeader.css'
 
 const mockRanking = [
   { pos: 1, nombre: 'Luis Ramírez',  puntos: 1200, nivel: 'Oro' },
